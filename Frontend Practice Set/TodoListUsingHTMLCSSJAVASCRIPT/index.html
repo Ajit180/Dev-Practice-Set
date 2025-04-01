@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-600">
+    <div class="bg-zinc-400 m-30 p-10 flex-col gap-4">
+      <div class="flex-row">
+        <h1 class="text-xl">Todo List</h1>
+
+        <label>Input:</label>
+
+        <input
+          placeholder="Enter your Task"
+          id="taskval"
+          type="text"
+          class="bg-white-300 border-[1px] border-black mt-5"
+        />
+        <br>
+        <button class="border-black border-[1px] text-back bg-blue-400 rounded mt-5" onclick="addTask()">Add Task</button> 
+
+        
+          <ul id="mylist">
+
+          </ul>
+        
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
